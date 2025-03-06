@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch
+import unittest.mock
 from Unit2HW1 import Restaurant,User
 
 class TestRestaurant(unittest.TestCase):
