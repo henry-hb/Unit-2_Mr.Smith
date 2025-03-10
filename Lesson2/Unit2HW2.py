@@ -22,13 +22,13 @@ class Restaurant:
         """
         prints description of restaurant including its name and what kind of food it serves
         """
-        print(f"{self.restaurant_name} is a restaurant that serves {self.cuisine_type}.")
+        print(f"Restaurant name: {self.restaurant_name}\nRestaurant cuisine: {self.cuisine_type}")
 
     def open_restaurant(self):
         """
         prints the name of the restaurant and that it is open
         """
-        print(f"{self.restaurant_name} is open!")
+        print(f"{self.restaurant_name} is open")
     
     def set_number_served(self, new_value):
         """
@@ -67,13 +67,13 @@ class User:
         """
         prints description of user including first and last name, height (in inches) and their current mood
         """
-        print(f"{self.first_name} {self.last_name} is {self.height} inches and is currently {(self.mood).lower()}.")
+        print(f"First Name: {self.first_name}\nLast Name: {self.last_name}")
 
     def greet_user(self):
         """
         prints a greeting to the user with their first and last name
         """
-        print(f"Hello {self.first_name} {self.last_name}!")
+        print(f"Welcome {self.first_name}!")
 
     def increment_login_attempts(self):
         """
@@ -99,7 +99,7 @@ def main():
     print(restaurant_one.number_served)
     print("")
 
-    user_one = User("Henry","Hall-Brown",72,"Happy")
+    user_one = User("Henry","Hall-Brown")
     user_one.describe_user()
     print(user_one.login_attempts)
     for i in range(12):
