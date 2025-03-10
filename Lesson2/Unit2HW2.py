@@ -46,21 +46,17 @@ class Restaurant:
         self.number_served += increment
     
 class User:
-    def __init__(self, first_name: str, last_name: str, height: int, mood: str):
+    def __init__(self, first_name: str, last_name: str):
         """
         creates new user object
 
         Args:
             first_name (str): first name of user
             last_name (str): last name of user
-            height (int): height of user (in inches)
-            mood (str): current mood of user
             login_attempts (int): how many times the user has logged in
         """
         self.first_name = first_name
         self.last_name = last_name
-        self.height = height
-        self.mood = mood
         self.login_attempts = 0
     
     def describe_user(self):
