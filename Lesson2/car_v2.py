@@ -59,7 +59,7 @@ class Car:
         if miles >= 0:
             self.odometer += miles
         else:
-            print(f"You cannot rollback an odometer")
+            print("You cannot rollback an odometer")
 
 
 def main():
