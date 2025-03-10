@@ -20,7 +20,7 @@ class Restaurant:
         """
         prints description of restaurant including its name and what kind of food it serves
         """
-        print(f"Restaurant name: {self.restaurant_name} Restaurant cuisine: {self.cuisine_type}.")
+        print(f"Restaurant name: {self.restaurant_name}\nRestaurant cuisine: {self.cuisine_type}.")
 
     def open_restaurant(self):
         """
@@ -44,13 +44,13 @@ class User:
         """
         prints description of user including first and last name, height (in inches) and their current mood
         """
-        print(f"{self.first_name} {self.last_name}.")
+        print(f"{self.first_name}\n{self.last_name}.")
 
     def greet_user(self):
         """
         prints a greeting to the user with their first and last name
         """
-        print(f"Hello {self.first_name} {self.last_name}!")
+        print(f"Welcome {self.first_name}!")
 
 def main():
     restaurant_one = Restaurant("Wendy's", "Fast Food")
