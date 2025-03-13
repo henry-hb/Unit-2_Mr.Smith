@@ -43,6 +43,8 @@ Please enter your payment amount.")
         self.give_change()
     
     def print_receipt(self,):
+        print("Smith Supercenter".center(39,'-'))
+        print()
         for item,prices in self.items_.items():
             # print(f"{item}\t")
             for price in prices:
@@ -58,10 +60,14 @@ Please enter your payment amount.")
         
 def main():
     self_checkout1 = Kiosk()
-    self_checkout1.add_item("milk",5)
-    self_checkout1.add_item("milk",5)
-    self_checkout1.add_item("bread",4.50)
-    self_checkout1.add_item("eggs",10.75)
+    while True:
+        print("Add an item or enter q to quit")
+        item = input("> ")
+        if item.lower() == 'q':
+            break
+        print("What is the price of this item?")
+        price = float(input("> "))
+        self_checkout1.add_item(item,price)
     self_checkout1.finalize_transcation()
     self_checkout1.print_receipt()
     
