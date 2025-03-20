@@ -22,5 +22,13 @@ class Television:
     def get_volume(self):
         return self.volume
     
-    def __repr__(self):
+    def __str__(self):
         return f"Channel: {self.channel}\nVolume: {self.volume}"
+    
+    def __repr__(self):
+        return f"Television({self.channel},{self.volume})"
+    
+tele1 = Television(True)
+tele1.channel_up()
+tele1.volume_down()
+print(tele1)
