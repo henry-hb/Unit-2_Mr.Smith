@@ -1,2 +1,7 @@
-class ElectricCar():
-    pass
+import Car
+
+
+        
+    
+
+
