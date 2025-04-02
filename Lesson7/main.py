@@ -61,7 +61,7 @@ def main():
     my_leaf.charge_car(0.3)
     print(my_leaf.battery_charge)
     print(my_leaf.year)
-    
+    my_leaf.battery_charge = 0.2
 
 
 if __name__ == '__main__':
