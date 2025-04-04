@@ -50,17 +50,6 @@ class ElectricCar(Car):
     def charge_car(self,amount):
         self.battery_charge += amount
 
-        self.battery_charge = 0
-
-    def fill_gas_tank(self, amount):
-        print("Electric cars don't have gas tanks")
-        print("Charging your car instead...")
-        self.charge_car(amount)
-
-    def charge_car(self, amount):
-        self.battery_charge += amount
-
-
 def main():
     my_leaf = ElectricCar("Nissan","Leaf",2024,60)
     print(my_leaf.battery_capacity)
